@@ -1,0 +1,276 @@
+/*GENERAL*/
+
+body {
+	background-color: #f7f7f8;
+}
+
+
+/*HEADER*/
+
+.logohead {
+	height: 50px;
+	animation: fadeIn ease 2s;
+	margin:5px;
+	/*display: block;*/	
+}
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+header {
+	background-color: #06038D;
+	max-width: 100%;
+	min-height: 60px;
+	top:0;
+	right: 0;
+	left:0;
+	display:flex;
+	/*flex-direction:row;*/
+	/*justify-content: flex-start;*/
+	align-items:center;
+	/*flex-flow:wrap;*/
+	margin-bottom: 0px;
+	padding-left:10%;
+	font-family: 'Montserrat', sans-serif ;
+	font-size:15px;
+	border-bottom: #BA0C2F solid 5px;
+}
+
+nav a:link {color: hsl(0, 0%, 100%);}
+nav a:visited {color: hsl(0, 0%, 100%);}
+nav a:active {color: hsl(0, 0%, 100%); font-weight: 700;  }
+nav a:hover {color: hsl(0, 0%, 100%); font-weight: 700;font-size: 14px;}
+
+nav li + li {
+	margin-left:10px;
+}
+
+/*INDEX*/
+
+.jumbotron {
+  background-image: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(32,99,155,0.5) 52%, rgba(60,174,163,1) 100%),url("../img/escritorio.jpg");
+  background-size: cover;
+  border-radius: 0 !important;
+}
+
+
+.titulojumbo {
+	color: #f7f7f8;
+	font-size: 60px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+	text-shadow: 2px 2px 5px #000000;
+
+}
+
+.jumbop {
+	font-size:25px !important;	
+	color:white;
+	text-shadow: 2px 2px 5px #000000;
+}
+
+.container{
+	margin-bottom: 30px;
+}
+
+.card-img-top{
+	size:100%;
+}
+
+.card-text{
+	font-family: "montserrat";
+	font-size: 16px;
+}
+
+
+
+.titulo {
+	grid-area: titulo;
+	color: #0075b8;
+	font-size: 70px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+
+.textoplano {
+	font-weight: 300;
+	font-family: montserrat;
+	color: gray;
+	font-size: 14px;
+	text-align: left;
+}
+
+
+/*CARRUSEL*/
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-inner{
+ height: 500px;
+}
+
+.mb-0 button{
+	text-decoration:none !important;
+	font-weight: 700 !important;
+	font-family: "Fira Sans";
+	font-size: 24px;
+	color: #f7f7f8;
+}
+
+.mb-0 button:hover
+	{
+		text-decoration:none !important;
+		font-weight: 700 !important;
+		font-family: "Fira Sans";
+		font-size: 24px;
+		color: #f7f7f8;
+		text-shadow: 1px 1px 2px black;
+		}
+
+.card-header {
+	background: #1A49D3;
+}
+
+
+
+/*Acordeon*/
+
+
+/*.btn btn-link {
+	background-color: #f7f7f8;
+	color: #f7f7f8;-color:#000;
+
+}
+
+
+.panel-default > .panel-heading {
+	background-color: #f7f7f8;
+	color: #f7f7f8;color:#000;
+}
+
+.accordion {
+	font-family: montserrat;
+	text-decoration: none;
+}
+
+.acordion .btn .btn-link {
+	text-decoration:none;
+	font-weight: 700;
+}
+
+.mb-0 h5 {
+	text-decoration:none !important;
+	font-weight: 700 !important;
+}*/
+
+/*FORMULARIO*/
+form {
+	font-family: "Montserrat";
+}
+
+label{
+	font-weight: 700 ;
+	font-family: "Fira Sans";
+	font-size: 18px;
+	color: #1A49D3;
+	margin:5px;
+}
+
+.enviar {
+	margin-top:15px;
+	display:block;
+}
+
+.btn-primary{
+	background-color: #06038D;
+	font-weight: 700;
+	font-family: "Fira sans";
+	width: 100%;
+}
+
+
+.btn-primary:hover {
+	background-color: #04025e;
+	font-weight: 700;
+	font-family: "Fira sans";
+	width: 100%;
+}
+
+
+
+/* Edición footer*/
+
+footer {
+	background-color: #444242;
+	width: 100% !important;
+	/*height: auto !important;*/	
+	bottom: 0;
+	left:0;
+	right:0;
+	margin-top:25px;/
+	/*display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center
+	padding:5px;*/
+}
+
+
+footer p {
+	font-family: "Fira Sans";
+	font-weight: 700;
+	font-size: 8px;
+	color:#f7f7f8;
+}
+
+.fab {
+	height: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #f7f7f8;
+}
+
+
+/*RESPONSIVE*/
+
+
+/*// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
+
+
+
+/*@media (min-width: 200px) and (max-width: 576px) {
+	/*.grindanglia {width: 100%; margin-left: auto; margin-right: auto;}*/
+	/*.imganglia {display:none;}
+	.textoanglia {width:300px; margin:10px;}
+	.link-anglia{display:block;}
+	}
+}
+
+
+/*@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+  	margin-right: auto;
+  }*/
