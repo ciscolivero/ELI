@@ -1,17 +1,22 @@
 /*GENERAL*/
 
-body {
+/*body {
 	background-color: #f7f7f8;
+}*/
+
+body {
+	background-color: #DCDCDC;
 }
+
+
 
 
 /*HEADER*/
 
-.logohead {
+/*.logohead {
 	height: 50px;
 	animation: fadeIn ease 2s;
 	margin:5px;
-	/*display: block;*/	
 }
 
 @keyframes fadeIn {
@@ -27,10 +32,7 @@ header {
 	right: 0;
 	left:0;
 	display:flex;
-	/*flex-direction:row;*/
-	/*justify-content: flex-start;*/
 	align-items:center;
-	/*flex-flow:wrap;*/
 	margin-bottom: 0px;
 	padding-left:10%;
 	font-family: 'Montserrat', sans-serif ;
@@ -45,7 +47,65 @@ nav a:hover {color: hsl(0, 0%, 100%); font-weight: 700;font-size: 14px;}
 
 nav li + li {
 	margin-left:10px;
+}*/
+
+/*FOOTER*/
+.logohead {
+	height: 15px;
+	animation: fadeIn ease 2s;
+	}
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
+ 
+
+ /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #06038D;
+  position: relative;
+  border-bottom: #BA0C2F solid 5px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding-left: 50px;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #010863;
+  color: white;
+  font-weight: 700;
+}
+
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+  font-weight: 700;
+}
+ 
 
 /*INDEX*/
 
@@ -80,11 +140,15 @@ nav li + li {
 }
 
 .card-text{
-	font-family: "montserrat";
+	font-family: "Fira Sans" sans-serif;
 	font-size: 16px;
 }
 
-
+.card-title {
+	font-family: "Montserrat";
+	font-weight: 700;
+	color: #06038D;
+}
 
 .titulo {
 	grid-area: titulo;
@@ -96,10 +160,10 @@ nav li + li {
 	margin-bottom:20px;
 }
 
-
+/* sacae*/
 .textoplano {
 	font-weight: 300;
-	font-family: montserrat;
+	font-family: "Fira sans" sans-serif;
 	color: gray;
 	font-size: 14px;
 	text-align: left;
@@ -110,7 +174,7 @@ nav li + li {
 
 .carousel-inner img {
     width: 100%;
-    max-height: 500px;
+    max-height: 475px;
     object-fit: cover;
 }
 
@@ -123,7 +187,7 @@ nav li + li {
 	font-weight: 700 !important;
 	font-family: "Fira Sans";
 	font-size: 24px;
-	color: #f7f7f8;
+	color: white;
 }
 
 .mb-0 button:hover
@@ -132,7 +196,7 @@ nav li + li {
 		font-weight: 700 !important;
 		font-family: "Fira Sans";
 		font-size: 24px;
-		color: #f7f7f8;
+		color: white;
 		text-shadow: 1px 1px 2px black;
 		}
 
@@ -172,7 +236,12 @@ nav li + li {
 	font-weight: 700 !important;
 }*/
 
+.accordion btn btn-link {
+	color:white !important;
+}
+
 /*FORMULARIO*/
+
 form {
 	font-family: "Montserrat";
 }
@@ -181,7 +250,7 @@ label{
 	font-weight: 700 ;
 	font-family: "Fira Sans";
 	font-size: 18px;
-	color: #1A49D3;
+	color: #06038D;
 	margin:5px;
 }
 
@@ -191,21 +260,20 @@ label{
 }
 
 .btn-primary{
-	background-color: #06038D;
+	background-color: #BA0C2F;
 	font-weight: 700;
 	font-family: "Fira sans";
 	width: 100%;
+	color: white;
 }
 
 
 .btn-primary:hover {
-	background-color: #04025e;
+	background-color: #940927;
 	font-weight: 700;
 	font-family: "Fira sans";
 	width: 100%;
 }
-
-
 
 /* Edición footer*/
 
@@ -240,6 +308,7 @@ footer p {
 	margin-right: 10px;
 	color: #f7f7f8;
 }
+
 
 
 /*RESPONSIVE*/

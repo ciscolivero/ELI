@@ -6,8 +6,12 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="js/script.js"> JAVA</script>
 	
-	<title> English Language Institute | Certificación oficial de Anglia Ascentis </title>
+	<title> English Language Institute | Instituto de inglés </title>
 	<link rel="shortcut icon" href="img/favicon.png">
 	<meta name="description" content="English Language Institute es un instituto  privado de capacitación y traducción, ubicado en la localidad de Noetinger, Córdoba, Argentina. Somos centro examinador oficial de exámenes internacionales Anglia Ascentis, una propuesta única en la zona. Realizamos traducciones profesionales de textos científicos, técnicos, comerciales y jurídicos.">
  	
@@ -16,23 +20,32 @@
 	<meta property="og:title" content="English Language Institute | Instituto de inglés" />
 	<meta property="og:description" content="English Language Institute es un instituto  privado de capacitación y traducción, ubicado en la localidad de Noetinger, Córdoba, Argentina. Somos centro examinador oficial de exámenes internacionales Anglia Ascentis, una propuesta única en la zona. Realizamos traducciones profesionales de textos científicos, técnicos, comerciales y jurídicos." />
 	<meta property="og:image" content="https://via.placeholder.com/150" />
-	
+
+
+
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet"> 
 </head>
 <!--Parte no visible-->
 
 <body>
 	<header>
-		<!--Bootstrap-->
-		<nav class="nav d-flex align-items-center">
-			<img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo.png">
-			<a class="nav-link active text-decoration" href="index.html">Home</a>
-			<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
-			<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
-			<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
-			<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
-		</nav>
+	<div class="topnav">
+  		<a href="index.html"><img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo03.png"> </a>
+  	<!-- Navigation links (hidden by default) -->
+  	<div id="myLinks">
+    	<a class="nav-link active text-decoration" href="index.html">Home</a>
+		<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
+		<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
+		<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
+		<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
+  </div>
+  	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+ 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  	</a>
+	</div>
 	</header>
+
 
 
  <div class="jumbotron text-center" >
@@ -49,8 +62,9 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
                     <div class="card-body column ">
-                        <p class="card-text">Los exámenes Anglia son exámenes oficiales de inglés que certifican tu dominio del idioma según el MCER (Marcon Común Europeo de Referencia). Los exámenes Anglia son certificados y avalados a través de la universidad de Chichester y ofrece varios tipos de exámenes oficiales para certificar tu nivel de inglés. </p>
-						<p class="card-text">Anglia Examinations trabaja en conjunto con Aim Awards y, de esta manera, logra ofrecer certificaciones acreditadas por Ofqual (Entidad gubernamental británica reguladora de certificaciones). Aim Awards es una organización acreditadora ubicada en el Reino Unido, que ofrece cientos de certificaciones oficiales en distintos niveles y diferentes áreas de estudio. Todos los centros examinadores Anglia están avalados tanto por Anglia como por Aim Awards en el desarrollo de sus funciones preparadoras y examinadoras.</p>
+                    <h4 class="card-title"> Exámenes oficiales </h4>
+                        <p class="card-text">Los exámenes Anglia son exámenes oficiales de inglés que certifican tu dominio del idioma según el <strong> MCER (Marcon Común Europeo de Referencia) </strong>. Los exámenes Anglia son certificados y avalados a través de la universidad de Chichester y ofrece varios tipos de exámenes oficiales para certificar tu nivel de inglés. </p>
+						<p class="card-text"> <strong> Anglia Examinations </strong> trabaja en conjunto con Aim Awards y, de esta manera, logra ofrecer certificaciones acreditadas por Ofqual (Entidad gubernamental británica reguladora de certificaciones). Aim Awards es una organización acreditadora ubicada en el Reino Unido, que ofrece cientos de certificaciones oficiales en distintos niveles y diferentes áreas de estudio. Todos los centros examinadores Anglia están avalados tanto por Anglia como por Aim Awards en el desarrollo de sus funciones preparadoras y examinadoras.</p>
 						<div class="col text-center">
 						<div class="botonexterno">
 						<a href="https://examenesanglia.com/" class="btn btn-primary" target="-_blank">Visitar la web de Anglia</a>
@@ -84,7 +98,7 @@
 		
 		</ul>
 	</div>
-		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="Pagina.com/"> Link Diseñador </a>
+		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="https://ar.linkedin.com/" target="_blank"> Link Diseñador </a> <!-- Agregar linkdn completo-->
   </div>
 </footer>
 

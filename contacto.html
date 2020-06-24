@@ -7,7 +7,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title> English Language Institute | Escribinos </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="js/script.js"> JAVA</script>
+	
+	<title> English Language Institute | Instituto de inglés </title>
 	<link rel="shortcut icon" href="img/favicon.png">
 	<meta name="description" content="English Language Institute es un instituto  privado de capacitación y traducción, ubicado en la localidad de Noetinger, Córdoba, Argentina. Somos centro examinador oficial de exámenes internacionales Anglia Ascentis, una propuesta única en la zona. Realizamos traducciones profesionales de textos científicos, técnicos, comerciales y jurídicos.">
  	
@@ -17,6 +21,8 @@
 	<meta property="og:description" content="English Language Institute es un instituto  privado de capacitación y traducción, ubicado en la localidad de Noetinger, Córdoba, Argentina. Somos centro examinador oficial de exámenes internacionales Anglia Ascentis, una propuesta única en la zona. Realizamos traducciones profesionales de textos científicos, técnicos, comerciales y jurídicos." />
 	<meta property="og:image" content="https://via.placeholder.com/150" />
 
+
+
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet"> 
 </head>
 <!--Parte no visible-->
@@ -24,22 +30,28 @@
 <body>
 	
 	<header>
-		<!--Bootstrap-->
-		<nav class="nav d-flex align-items-center">
-			<img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo.png">
-			<a class="nav-link active text-decoration" href="index.html">Home</a>
-			<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
-			<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
-			<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
-			<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
-		</nav>
+	<div class="topnav">
+  		<a href="index.html"><img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo03.png"> </a>
+  	<!-- Navigation links (hidden by default) -->
+  	<div id="myLinks">
+    	<a class="nav-link active text-decoration" href="index.html">Home</a>
+		<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
+		<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
+		<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
+		<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
+  </div>
+  	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+ 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  	</a>
+	</div>
 	</header>
+
 
  <div class="jumbotron text-center" >
   <h1 class="titulojumbo"> 🗨 ¡Ponete en contacto con nosotros! </h1>
   <p class="jumbop"> Te responderemos a la brevedad </p>
 </div>
-
 
  <div class="container bcontent">
         <div class="container">
@@ -84,12 +96,13 @@
             
             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <iframe class= "inline-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d842.4904768849226!2d-62.31359791186573!3d-32.366567398812826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cbc7097c609675%3A0xdad20f5942d6d1ab!2sSanta%20Fe%20%26%20San%20Mart%C3%ADn%2C%20Noetinger%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1588589528581!5m2!1ses!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    <iframe class= "inline-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d842.4904768849226!2d-62.31359791186573!3d-32.366567398812826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cbc7097c609675%3A0xdad20f5942d6d1ab!2sSanta%20Fe%20%26%20San%20Mart%C3%ADn%2C%20Noetinger%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1588589528581!5m2!1ses!2sar" width="100%" height="475" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
 				</iframe>
                 </div>
         </div>
     </div>
 </div>
+
 
 
 
@@ -114,9 +127,9 @@
 		
 		</ul>
 	</div>
-		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="Pagina.com/"> Link Diseñador </a>
+		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="https://ar.linkedin.com/" target="_blank"> Link Diseñador </a> <!-- Agregar linkdn completo-->
   </div>
-
+</footer>
 
 
 

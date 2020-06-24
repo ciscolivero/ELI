@@ -6,8 +6,12 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="js/script.js"> JAVA</script>
 	
-	<title> English Language Institute | Nuestras instalaciones </title>
+	<title> English Language Institute | Instituto de inglés </title>
 	<link rel="shortcut icon" href="img/favicon.png">
 	<meta name="description" content="English Language Institute es un instituto  privado de capacitación y traducción, ubicado en la localidad de Noetinger, Córdoba, Argentina. Somos centro examinador oficial de exámenes internacionales Anglia Ascentis, una propuesta única en la zona. Realizamos traducciones profesionales de textos científicos, técnicos, comerciales y jurídicos.">
  	
@@ -16,23 +20,44 @@
 	<meta property="og:title" content="English Language Institute | Instituto de inglés" />
 	<meta property="og:description" content="English Language Institute es un instituto  privado de capacitación y traducción, ubicado en la localidad de Noetinger, Córdoba, Argentina. Somos centro examinador oficial de exámenes internacionales Anglia Ascentis, una propuesta única en la zona. Realizamos traducciones profesionales de textos científicos, técnicos, comerciales y jurídicos." />
 	<meta property="og:image" content="https://via.placeholder.com/150" />
-	
+
+
+
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet"> 
 </head>
 <!--Parte no visible-->
 
 <body>
-	<header>
-		<!--Bootstrap-->
+<!--	<header>
 		<nav class="nav d-flex align-items-center">
-			<img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo.png">
+			<a href="index.html"><img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo.png"> </a>
 			<a class="nav-link active text-decoration" href="index.html">Home</a>
 			<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
 			<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
 			<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
 			<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
 		</nav>
+	</header>-->
+
+	<header>
+	<div class="topnav">
+  		<a href="index.html"><img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo03.png"> </a>
+  	<!-- Navigation links (hidden by default) -->
+  	<div id="myLinks">
+    	<a class="nav-link active text-decoration" href="index.html">Home</a>
+		<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
+		<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
+		<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
+		<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
+  </div>
+  	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+ 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  	</a>
+	</div>
 	</header>
+
+
 
 <!-- CARRUSEL-->
  <div class="jumbotron text-center" >
@@ -75,9 +100,16 @@
 						</div>
 						    </div>
                 <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
-                    <div class="card-body column ">
-                       <p class="textoplano"> Posee tres aulas con capacidad para 10 alumnos, una entrada que se utiliza como sala de espera y un pasillo cómodo que conecta las 3 aulas. Éstas últimas poseen pizarras, bancos dispuestos en forma de "u" y una de ellas consta de una pizarra digital con proyector. </p>
-						<p class="textoplano">Todas las aulas poseen sistemas de audio propio. También se cuenta con computadora de usonpersonal por la docente.  Los alumnos pueden trabajar con sus propios dispositivos electrónicos ya que la institución posee wi-fi para sus alumnos  </p>
+                    <div class="card-body column">
+
+                    	<h4 class="card-title"> Aulas cómodas </h4>
+                       	<p class="card-text"> Posee tres aulas con capacidad para 10 alumnos cada una. Todas poseen <strong> sistemas de audio propio. </strong> </p>
+                       	
+                       	<h4 class="card-title"> Gran Biblioteca</h4>
+                       	<p class="card-text"> Más de <strong> 1500 títulos </strong> disponibles para su consulta. Contamos con convenios para acceso a bibliotecas electrónicas. </p>
+
+                       	<h4 class="card-title"> Conectividad </h4>
+						<p class="card-text"> Los alumnos pueden trabajar con sus propios dispositivos electrónicos, ya que la institución posee wi-fi para sus alumnos  </p>
                     </div>
                 </div>
             </div>
@@ -85,7 +117,7 @@
     </div>
 
 
-	<footer class="container-fluid page-footer font-small pt-4 ">
+<footer class="container-fluid page-footer font-small pt-4 ">
 	<div class="container">
 	    <ul class="list-unstyled list-inline text-center">
 	      <li class="list-inline-item">
@@ -105,10 +137,10 @@
 		    </li>
 		
 		</ul>
-		</div>
-		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="Pagina.com/"> Link Diseñador </a>
- 		</div>
-	</footer>
+	</div>
+		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="https://ar.linkedin.com/" target="_blank"> Link Diseñador </a> <!-- Agregar linkdn completo-->
+  </div>
+</footer>
 
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -6,6 +6,10 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="js/script.js"> JAVA</script>
 	
 	<title> English Language Institute | Instituto de inglés </title>
 	<link rel="shortcut icon" href="img/favicon.png">
@@ -24,17 +28,35 @@
 <!--Parte no visible-->
 
 <body>
-	
-	<header>
-		<!--Bootstrap-->
+
+<!--	<header>
 		<nav class="nav d-flex align-items-center">
-			<img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo.png">
+			<a href="index.html"><img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo.png"> </a>
 			<a class="nav-link active text-decoration" href="index.html">Home</a>
 			<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
 			<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
 			<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
 			<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
 		</nav>
+	</header>-->
+
+	<!-- Top Navigation Menu -->
+	<header>
+	<div class="topnav">
+  		<a href="index.html"><img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo03.png"> </a>
+  	<!-- Navigation links (hidden by default) -->
+  	<div id="myLinks">
+    	<a class="nav-link active text-decoration" href="index.html">Home</a>
+		<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
+		<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
+		<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
+		<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
+  </div>
+  	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+ 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  	</a>
+	</div>
 	</header>
 
 
@@ -46,10 +68,47 @@
 </div>
 
 
- <div class="container">
+<div class="container">
+<div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/alumnos.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Sobre nosotros </h4>
+            <p class="card-text"> </strong> English Language Institute es un instituto </strong> privado de capacitación y traducción, ubicado en la localidad de Noetinger, Córdoba, Argentina.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/examen.jpg" alt="Card image">
+          <div class="card-body">
+ 				<h4 class="card-title">Exámenes internacionales </h4>
+            <p class="card-text">Somos centro examinador oficial de exámenes internacionales <strong>Anglia Ascentis </strong>, una propuesta única en la zona.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/pizarra.jpg" alt="Card image">
+          <div class="card-body">
+ 				<h4 class="card-title"> Traducciones </h4>
+            <p class="card-text"> En nuestra institución, realizamos <strong>traducciones </strong> profesionales de textos científicos, técnicos, comerciales y jurídicos.</p>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- <div class="container">
    <div class="row">
 	    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-    	    <div class="card">
+    	    <div class="card  h-100">
 				<img class="card-img-top" src="img/alumnos.jpg" alt="Card image">
 				<div class="card-body">
 		    	<p class="card-text"> <strong>English Language Institute es un instituto </strong> privado de capacitación y traducción, ubicado en la localidad de Noetinger, Córdoba, Argentina.</p>
@@ -57,8 +116,8 @@
 			</div>
 		</div>
 
-			    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"">
-    	    <div class="card">
+			    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+    	    <div class="card  h-100">
 				<img class="card-img-top" src="img/anglia.png" alt="Card image">
 				<div class="card-body">
 		    	<p class="card-text">Somos centro examinador oficial de exámenes internacionales <strong>Anglia Ascentis </strong>, una propuesta única en la zona.</p>
@@ -66,8 +125,8 @@
 			</div>
 		</div>
 
-			    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"">
-    	    <div class="card">
+			    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+    	    <div class="card  h-100">
 				<img class="card-img-top" src="img/pizarra.jpg" alt="Card image">
 				<div class="card-body">
 		    	<p class="card-text">Realizamos <strong>traducciones </strong> profesionales de textos científicos, técnicos, comerciales y jurídicos.</p>
@@ -75,7 +134,7 @@
 			</div>
 		</div>
  	</div>
-</div>
+</div>-->
 
 
 
@@ -102,7 +161,7 @@
 		
 		</ul>
 	</div>
-		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="Pagina.com/"> Link Diseñador </a>
+		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="https://ar.linkedin.com/" target="_blank"> Link Diseñador </a> <!-- Agregar linkdn completo-->
   </div>
 </footer>
 
