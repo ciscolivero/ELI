@@ -28,23 +28,25 @@
 <!--Parte no visible-->
 
 <body>
-	<header>
-	<div class="topnav">
-  		<a href="index.html"><img class="logohead" alt="Responsive image" alt= "Logo de English Language Institute Logo" src="img/logo03.png"> </a>
-  	<!-- Navigation links (hidden by default) -->
-  	<div id="myLinks">
-    	<a class="nav-link active text-decoration" href="index.html">Home</a>
-		<a class="nav-link text-decoration" href="instituto.html">El instituto</a>
-		<a class="nav-link text-decoration" href="cursos.html">Cursos disponibles</a>
-		<a class="nav-link text-decoration" href="anglia.html">Exámenes Anglia</a>
-		<a class="nav-link text-decoration" href="contacto.html">Contacto</a>
-  </div>
-  	<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
- 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  	</a>
-	</div>
-	</header>
+
+<header>
+<nav class="top-nav">
+    <div>
+    <a href="index.html"><img class="logohead" alt= "Logo de English Language Institute Logo" src="img/logo1.png"> </a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="instituto.html">El instituto</a></li>
+      <li><strong><a href="cursos.html">Cursos disponibles</a></strong></li>
+      <li><a href="anglia.html"> <strong>Exámenes Anglia </strong></a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
 
 
@@ -62,12 +64,14 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
                     <div class="card-body column ">
+                    	<div class="angliadetalle">
                     <h4 class="card-title"> Exámenes oficiales </h4>
                         <p class="card-text">Los exámenes Anglia son exámenes oficiales de inglés que certifican tu dominio del idioma según el <strong> MCER (Marcon Común Europeo de Referencia) </strong>. Los exámenes Anglia son certificados y avalados a través de la universidad de Chichester y ofrece varios tipos de exámenes oficiales para certificar tu nivel de inglés. </p>
 						<p class="card-text"> <strong> Anglia Examinations </strong> trabaja en conjunto con Aim Awards y, de esta manera, logra ofrecer certificaciones acreditadas por Ofqual (Entidad gubernamental británica reguladora de certificaciones). Aim Awards es una organización acreditadora ubicada en el Reino Unido, que ofrece cientos de certificaciones oficiales en distintos niveles y diferentes áreas de estudio. Todos los centros examinadores Anglia están avalados tanto por Anglia como por Aim Awards en el desarrollo de sus funciones preparadoras y examinadoras.</p>
 						<div class="col text-center">
 						<div class="botonexterno">
 						<a href="https://examenesanglia.com/" class="btn btn-primary" target="-_blank">Visitar la web de Anglia</a>
+					</div>
 					</div>
 					</div>
                     </div>
@@ -98,8 +102,10 @@
 		
 		</ul>
 	</div>
-		<div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="https://ar.linkedin.com/" target="_blank"> Link Diseñador </a> <!-- Agregar linkdn completo-->
+	<div class="textofooter">	
+    <div class="footer-copyright text-center py-3 text-white">© Todos los derechos reservados &copy; 2020 <a href="https://ar.linkedin.com/" target="_blank"> Link Diseñador </a> <!-- Agregar linkdn completo-->
   </div>
+</div>
 </footer>
 
 

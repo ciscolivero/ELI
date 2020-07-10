@@ -1,113 +1,17 @@
 /*GENERAL*/
 
-/*body {
-	background-color: #f7f7f8;
-}*/
-
 body {
 	background-color: #DCDCDC;
 }
 
+/*general*/
 
 
-
-/*HEADER*/
-
-/*.logohead {
-	height: 50px;
-	animation: fadeIn ease 2s;
-	margin:5px;
+h1 {
+	font-family:"Montserrat" sans-serif;
+	color: #BA0C2F;
+	font-weight: 700; 
 }
-
-@keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
-}
-
-header {
-	background-color: #06038D;
-	max-width: 100%;
-	min-height: 60px;
-	top:0;
-	right: 0;
-	left:0;
-	display:flex;
-	align-items:center;
-	margin-bottom: 0px;
-	padding-left:10%;
-	font-family: 'Montserrat', sans-serif ;
-	font-size:15px;
-	border-bottom: #BA0C2F solid 5px;
-}
-
-nav a:link {color: hsl(0, 0%, 100%);}
-nav a:visited {color: hsl(0, 0%, 100%);}
-nav a:active {color: hsl(0, 0%, 100%); font-weight: 700;  }
-nav a:hover {color: hsl(0, 0%, 100%); font-weight: 700;font-size: 14px;}
-
-nav li + li {
-	margin-left:10px;
-}*/
-
-/*FOOTER*/
-.logohead {
-	height: 15px;
-	animation: fadeIn ease 2s;
-	}
-
-@keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
-}
- 
-
- /* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #06038D;
-  position: relative;
-  border-bottom: #BA0C2F solid 5px;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  padding-left: 50px;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #010863;
-  color: white;
-  font-weight: 700;
-}
-
-
-/* Style the active link (or home/logo) */
-.active {
-  color: white;
-  font-weight: 700;
-}
- 
-
-/*INDEX*/
 
 .jumbotron {
   background-image: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(32,99,155,0.5) 52%, rgba(60,174,163,1) 100%),url("../img/escritorio.jpg");
@@ -117,19 +21,165 @@ nav li + li {
 
 
 .titulojumbo {
-	color: #f7f7f8;
-	font-size: 60px;
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 700;
-	text-shadow: 2px 2px 5px #000000;
+  color: #f7f7f8;
+  font-size: 60px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #000000;
 
 }
 
 .jumbop {
-	font-size:25px !important;	
-	color:white;
-	text-shadow: 2px 2px 5px #000000;
+  font-size:25px !important;  
+  color:white;
+  text-shadow: 2px 2px 5px #000000;
 }
+
+.portfolio-item {
+  margin-bottom: 20px;
+}
+/* NAVEGADOR*/
+
+
+.logohead {
+  height: 40px;
+  margin:20px;
+}
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#141275; 
+  color: #FFF;
+  overflow: hidden;
+  height: 50px;
+  padding: 1em;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+}
+
+
+.menu li a {
+	text-decoration: none;
+	color:white;
+	font-size: 16px;
+	letter-spacing: -0,5px;
+	font-family: "Montserrat" sans-serif;
+}
+
+
+.menu li a:link {color: hsl(0, 0%, 100%);}
+.menu li a:visited  {color: hsl(0, 0%, 100%);}
+.menu li a:active {color: hsl(0, 0%, 100%);}
+.menu li a:hover {color: #D3D3D3 }
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: #141275;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 950px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid  	#141275;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #06038D;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid  	#141275;
+  }
+}
+
+
+
+/*INDEX*/
+
 
 .container{
 	margin-bottom: 30px;
@@ -145,7 +195,7 @@ nav li + li {
 }
 
 .card-title {
-	font-family: "Montserrat";
+	font-family: "Montserrat" sans-serif;
 	font-weight: 700;
 	color: #06038D;
 }
@@ -160,7 +210,6 @@ nav li + li {
 	margin-bottom:20px;
 }
 
-/* sacae*/
 .textoplano {
 	font-weight: 300;
 	font-family: "Fira sans" sans-serif;
@@ -170,17 +219,40 @@ nav li + li {
 }
 
 
+.bg-secondary {
+background-color:#BA0C2F !important;
+}
+
 /*CARRUSEL*/
 
-.carousel-inner img {
-    width: 100%;
-    max-height: 475px;
-    object-fit: cover;
+.showcase .showcase-text {
+  padding: 3rem;
 }
 
-.carousel-inner{
- height: 500px;
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
 }
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.cursos {
+	margin-top: 30px;
+}
+
+
+
+.calltoaction {
+  font-family: "fira sans" sans-serif;
+  font-size: 24px;
+}
+
+
+/*CURSOS*/
 
 .mb-0 button{
 	text-decoration:none !important;
@@ -205,40 +277,12 @@ nav li + li {
 }
 
 
+/*ANGLIA*/
 
-/*Acordeon*/
-
-
-/*.btn btn-link {
-	background-color: #f7f7f8;
-	color: #f7f7f8;-color:#000;
-
+.angliadetalle {
+	margin-top: 40px;
 }
 
-
-.panel-default > .panel-heading {
-	background-color: #f7f7f8;
-	color: #f7f7f8;color:#000;
-}
-
-.accordion {
-	font-family: montserrat;
-	text-decoration: none;
-}
-
-.acordion .btn .btn-link {
-	text-decoration:none;
-	font-weight: 700;
-}
-
-.mb-0 h5 {
-	text-decoration:none !important;
-	font-weight: 700 !important;
-}*/
-
-.accordion btn btn-link {
-	color:white !important;
-}
 
 /*FORMULARIO*/
 
@@ -275,32 +319,17 @@ label{
 	width: 100%;
 }
 
-/* Edición footer*/
+/* FOOTER*/
 
 footer {
 	background-color: #444242;
 	width: 100% !important;
-	/*height: auto !important;*/	
 	bottom: 0;
 	left:0;
 	right:0;
 	margin-top:25px;/
-	/*display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	align-content: center
-	padding:5px;*/
 }
 
-
-footer p {
-	font-family: "Fira Sans";
-	font-weight: 700;
-	font-size: 8px;
-	color:#f7f7f8;
-}
 
 .fab {
 	height: 20px;
@@ -309,37 +338,8 @@ footer p {
 	color: #f7f7f8;
 }
 
-
-
-/*RESPONSIVE*/
-
-
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }*/
-
-
-
-/*@media (min-width: 200px) and (max-width: 576px) {
-	/*.grindanglia {width: 100%; margin-left: auto; margin-right: auto;}*/
-	/*.imganglia {display:none;}
-	.textoanglia {width:300px; margin:10px;}
-	.link-anglia{display:block;}
-	}
+.textofooter {
+  color:white;
+  font-family: "Fira sans" sans-serif;
+  font-size: 12px;
 }
-
-
-/*@media only screen and (max-width: 576px) {
-  .container {
-    width: 100%;
-    margin-left: auto;
-  	margin-right: auto;
-  }*/
